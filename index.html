@@ -17,5 +17,26 @@
         <input type="file" name="pdf">
         <input type="submit" value="Enviar PDF">
     </form>
+
+    <p>1. valor de file_uploads: on <br>
+        2. valor de upload_max_filesize: 40M <br>
+        3. upload_tmp_dir = “c:\xampp\tmp” <br>
+        4. post_max_size=40M <br>
+        5. max_input_time:60</p> <br>
+
+        <p>b. Ambas as funções is_uploaded_file() e move_uploaded_file() são usadas para
+            lidar com o upload de arquivos. A primeira verifica se um arquivo foi realmente
+            enviado via HTTP POST. Já a segunda, move um arquivo enviado para um novo
+            local no servidor. <br>
+
+            c. A marca <INPUT> com o atributo type="hidden" permite definir dados que são
+            passados a um programa CGI mas não aparecem ao utilizador do formulário. <br>
+
+            d. Para filtrar as extensões de arquivos em um programa PHP, você pode seguir
+            estes passos:</p> <br>
+
+            <p>1. Defina um array com as extensões permitidas. <br>
+                2. Verifique se a extensão do arquivo enviado está nesse array. <br>
+                3. Processe o upload se a extensão for permitida.</p> <br>
 </body>
 </html>
